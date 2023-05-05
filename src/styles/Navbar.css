@@ -1,7 +1,7 @@
 .nav_ul {
     display: none;
-    width: 50%;
     justify-content: space-between;
+    gap: 2rem
 }
 
 .nav_ul--mobile {
@@ -18,7 +18,7 @@ a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-family: serif;
 }
 svg {
@@ -41,7 +41,7 @@ svg {
 }
 @media only screen and (min-width: 600px){
     .nav_ul {
-        display: flex
+        display: flex;
     }
     svg {
         display: none;
@@ -53,7 +53,7 @@ svg {
 
 @media only screen and ( min-width: 900px) {
     .nav_ul {
-        width: 35%;
+        gap:4rem;
     }
 }
 

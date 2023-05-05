@@ -14,6 +14,8 @@ const servicios = await Astro.glob('../servicios/*.md')
 
 <style>
     h3 {
+        padding-block-start: 5rem;
+        margin-block-end: 3rem;
         font-size: 3rem;
         text-align: center;
         font-family: serif;
@@ -21,8 +23,8 @@ const servicios = await Astro.glob('../servicios/*.md')
     }
     .content-card {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1.2rem;
-        align-items: center;
     }
 </style>

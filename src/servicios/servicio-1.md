@@ -1,4 +1,4 @@
 ---
-title: Servicio 1
-body: Descripcion mas detalla del servicio que se ofrece. En esta sección se tiene que agregar 5 lineas que expliquen las descripción.
+title: Restauracion de Joyas
+body: ¿Tienes joyas antiguas o dañadas? Nuestro servicio de restauración de joyas puede devolverles su antigua gloria con reparaciones expertas y pulidos profesionales. Vuelve a disfrutar de tus piezas favoritas.
 ---
