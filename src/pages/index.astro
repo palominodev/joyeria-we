@@ -1,0 +1,19 @@
+---
+import Acerca from '../components/Acerca.astro';
+import Contacto from '../components/Contacto.astro';
+import Galeria from '../components/Galeria.astro';
+import Header from '../components/Header.astro';
+import Servicios from '../components/Servicios.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+
+	<Header/>
+	<main>
+		<Acerca />
+		<Servicios />
+		<Galeria />
+		<Contacto /> 
+	</main>
+</Layout>

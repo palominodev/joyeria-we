@@ -1,0 +1,11 @@
+---
+import ServicioCard from "./ServicioCard.astro";
+const servicios = await Astro.glob('../servicios/*.md')
+---
+
+<section id="servicios">
+    <h3>Servicios</h3>
+    {
+        servicios.map(({frontmatter}) => <ServicioCard body={frontmatter.body} title={frontmatter.title} />)
+    }
+</section>

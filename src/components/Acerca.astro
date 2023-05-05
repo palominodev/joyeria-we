@@ -1,0 +1,30 @@
+---
+import SkillCard from "./SkillCard.astro";
+
+const skills = await Astro.glob('../skills/*.md')
+---
+
+<section id="acerca">
+    <h2>Sobre mi</h2>
+    <div>
+        <figure>
+            <img 
+                src="https://st2.depositphotos.com/3078691/8709/i/450/depositphotos_87097204-stock-photo-happy-smiling-older-man.jpg" 
+                alt="Alberto Fernandez Aranda"
+                width="300"
+                >
+        </figure>
+    </div>
+    <section>
+        {
+            skills.map(({frontmatter}) => 
+                <SkillCard 
+                    body={frontmatter.body}
+                    href={frontmatter.href}    
+                    img={frontmatter.img}
+                    title={frontmatter.title}
+                /> 
+            )
+        }
+    </section>
+</section>

@@ -1,0 +1,121 @@
+---
+import { Navbar } from "./Navbar";
+
+const LINKS = [
+    {
+        text: 'Acerca',
+        url: '#acerca'
+    },
+    {
+        text: 'Servicios',
+        url: '#servicios'
+    },
+    {
+        text: 'Galeria',
+        url: '#galeria'
+    },
+    {
+        text: 'Contacto',
+        url: '#contacto'
+    }
+]
+
+---
+
+<header>
+    <nav>
+        <div><a href="#">Logo</a></div>
+        
+        <Navbar links={LINKS} client:load />
+        
+    </nav>
+    <section class="hero">
+        <article class="hero_description">
+            <h1>Elegancia Peruana y diseño Ancestral</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat ab consequatur quaerat veniam nulla magnam vitae nisi deleniti doloribus alias</p>
+        </article>
+        <div class="content-img">
+            <figure>
+                <img 
+                    src="https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/joy-n/diamond/diamond-sapphire_AAA/alloycolour/white.jpg?width=800&height=800" 
+                    alt="anillo de plata"
+                    width="240"
+                    >
+            </figure>
+        </div>
+    </section>
+</header>
+
+<style>
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .hero {
+        margin-block-start: 4rem;
+        padding-inline: 4rem;
+        margin: 0 auto  ;
+    }
+
+    .content-img {
+        width: 25rem;
+        margin: 0 auto;
+    }
+
+    figure,img {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-family: serif;
+        margin-block-end: 1.2rem;
+        text-align: center;
+    }
+    p {
+        font-size: 2rem;
+        word-spacing: 1.3rem;
+        text-align: center
+    }
+
+    @media only screen and ( min-width: 768px ) {
+        .hero {
+            display: flex;
+            justify-content: space-between;
+        }
+        .hero_description {
+            width: 30rem;
+        }
+        h1 {
+            font-size: 5rem;
+            text-align: left
+        }
+        p {
+            text-align: left
+        }
+        .content-img {
+            width: 45rem;
+            margin: 0;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        .hero {
+            padding-inline: 15rem;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .hero {
+            padding-inline: 23rem
+        }
+    }
+    
+</style>
