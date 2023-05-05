@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+.nav_ul--mobile {
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+
 li {
     list-style: none;
 }
@@ -12,7 +18,7 @@ a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-family: serif;
 }
 svg {

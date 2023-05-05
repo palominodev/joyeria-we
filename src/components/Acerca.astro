@@ -11,11 +11,10 @@ const skills = await Astro.glob('../skills/*.md')
             <img 
                 src="https://st2.depositphotos.com/3078691/8709/i/450/depositphotos_87097204-stock-photo-happy-smiling-older-man.jpg" 
                 alt="Alberto Fernandez Aranda"
-                width="300"
                 >
         </figure>
     </div>
-    <section>
+    <section class="content-cards">
         {
             skills.map(({frontmatter}) => 
                 <SkillCard 
@@ -28,3 +27,29 @@ const skills = await Astro.glob('../skills/*.md')
         }
     </section>
 </section>
+
+<style>
+    h2 {
+        font-family: serif;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 25rem;
+    }
+
+    .content-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+</style>

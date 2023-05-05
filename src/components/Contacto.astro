@@ -3,9 +3,10 @@
 ---
 
 <section id="contacto">
+    <h3>Contacto</h3>
     <div>
         <figure>
-            <img width="150" src="https://st2.depositphotos.com/3078691/8709/i/450/depositphotos_87097204-stock-photo-happy-smiling-older-man.jpg" alt="">
+            <img src="https://img.freepik.com/foto-gratis/primer-plano-hombre-mayor-pelo-gris_23-2148783578.jpg?w=740&t=st=1683289494~exp=1683290094~hmac=2ea7049becd0e1042abb91d187e0eadab62b23b6992652a1b918f9035ce5cd40" alt="">
         </figure>
     </div>
     <form action="">
@@ -16,8 +17,70 @@
         <input type="email" name="email" id="email" placeholder="user@example.com">
 
         <label for="description">Descripción (<i>opcional</i>) </label>
-        <textarea name="description" id="description" cols="30" rows="10" placeholder="descripción"></textarea>
+        <textarea name="description" id="description" rows="5" placeholder="descripción"></textarea>
 
         <button>Contactar</button>
     </form>
 </section>
+
+<style>
+    h3 {
+        font-size: 3rem;
+        font-family: serif;
+        text-decoration: underline;
+        margin-block: 1.2rem
+    }
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    figure {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+		height: 100%;
+		object-fit: cover;
+        
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label:first-child {
+        margin-block-start: 1.2rem;
+    }
+
+    label {
+        font-size: 1.6rem;
+        font-family: serif;
+        margin-block-end: 0.4rem;
+    }
+
+    input[type="text"], input[type="email"], textarea  {
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        font-family: sans-serif;
+    }
+
+    textarea {
+        resize: none;
+        margin-block-end: 1.2rem
+    }
+
+    button {
+        font-size: 1.6rem;
+        padding: 1.2rem;
+        margin-block: 1.2rem 8rem;
+        border: 1px solid black;
+        background-color: white;
+    }
+</style>

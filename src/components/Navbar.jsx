@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../styles/Navbar.css';
 export const Navbar = ({links}) => {
   const [showMenu, setShowMenu] = useState(false)
@@ -26,7 +26,7 @@ export const Navbar = ({links}) => {
       {
         showMenu && 
         <div className='menu'>
-          <ul>
+          <ul className='nav_ul--mobile'>
           {
               links.map(({text,url},i) => <li key={i}> <a onClick={onShowMenu} href={url}>{text}</a> </li> )
           }
